@@ -1006,6 +1006,16 @@ public class Main {
                 "nrhdxfsqvxcbcghf35eightthreeseven5";
         int result = 0;
 
+        text = text.replace("eight","eight8eight");
+        text = text.replace("one","one1one");
+        text = text.replace("two","two2two");
+        text = text.replace("three","three3three");
+        text = text.replace("four","four4four");
+        text = text.replace("five","five5five");
+        text = text.replace("six","six6six");
+        text = text.replace("seven","seven7seven");
+        text = text.replace("nine","nine9nine");
+
         BufferedReader bufReader = new BufferedReader(new StringReader(text));
         String line=null;
         while( (line=bufReader.readLine()) != null )
@@ -1021,6 +1031,7 @@ public class Main {
                 }
             }
             result += first * 10 + last;
+
         }
 
         System.out.println(result);
